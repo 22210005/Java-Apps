@@ -1,0 +1,79 @@
+package Week1;
+
+import helpers.InputReader;
+public class Week1 
+{
+    public static final String CONSOLE_CLEAR = "\033[H\033[2J";
+    public static void main(String[] args)
+    {
+        System.out.println(CONSOLE_CLEAR);
+
+        System.out.println("==================================");
+        System.out.println("CO452 Programming Concepts 2022/23");
+        System.out.println("==================================");
+        System.out.println();
+        System.out.println("  Week 1 Java Basic Input/Output ");
+        System.out.println();
+        System.out.println(" by Nicholas Day and Derek Peacock");
+        System.out.println();
+
+    // Asking the user for their name
+
+        String name = InputReader.getString("Enter your name > ");
+        System.out.println("Hello " + name);
+
+    // Calculating the Area & Perimeter
+
+        int rheight = InputReader.getInt("What is the height of your rectangle? > ");
+        int rlength = InputReader.getInt("What is the length of your rectangle? > ");
+
+        int area = rheight * rlength
+        int perimeter = rheight * 2 + rlength * 2
+
+        System.out.println("The total perimeter of the rectangle is" + perimeter);
+        System.out.println("The total area of the rectangle is" + area);
+
+    // Calculating the Average
+
+        int num1 = InputReader.getInt("Please enter your first number > ");
+        int num2 = InputReader.getInt("Please enter your second number > ");
+
+        int average = num1 + num2 / 2
+
+        System.out.println("The average is" + average);
+
+    // Reverse & Swapped Numbers
+
+        int num1a = InputReader.getInt("Please enter your first number > ");
+        int num2a = InputReader.getInt("Please enter your second number > ");
+
+        System.out.println("The original order is" num1a, num2a);
+        System.out.println("The reversed order is" num2a, num1a);
+
+    // Age Calculator
+
+        int age = InputReader.getInt("Please input your age > ");
+        int year = 2022
+        int birthyear = year - age
+
+        System.out.println("Your birth year is" birthyear);
+
+    // Feet to Miles Converter
+
+        int feet = InputReader.getInt("Enter your value in feet > ");
+        int miles = feet / 5280
+
+        System.out.println("Your value in miles is " miles);
+
+    // Compound Intrest Calculator
+
+        int deposit = InputReader.getInt("Enter your deposit ammount > ");
+        int intrestval = 1
+        int totalintrest = deposit / 100 * intrestval
+
+        int compintrest = totalintrest + deposit
+
+        System.out.println("Your in 1 year your money will be " compintrest);
+
+    } 
+}
